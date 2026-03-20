@@ -9,7 +9,6 @@ This my submission for the Take-Home Assignment as mention in the PDF. This back
   - **Database:** SQLite (local development)
   - **External Integration:** Dev.to API (Public Articles)
 
------
 
 ## Installation and Setup
 
@@ -48,7 +47,6 @@ python manage.py runserver
 
 The API is accessible at `[http://127.0.0.1:8000/](http://127.0.0.1:8000/)`.
 
------
 
 ## API Documentation
 
@@ -85,7 +83,6 @@ Automated tests verify the scoring algorithm and the suppression workflow. These
 python manage.py test
 ```
 
----
 
 ## Assumptions and Trade-offs
 
@@ -95,7 +92,7 @@ python manage.py test
 - **Admin Interface:** The Django Admin has been customized to allow reviewers to update flag statuses directly from the list view, improving the efficiency of the human review workflow.
 - **External API Choice:**I utilized the Dev.to Public API for content ingestion as it provides high-quality, real-time technical data and, crucially, does not require an API key. This ensures the it can run the "Preferred Solution" immediately without external configuration.
 
----
+
 
 ## Project Structure
 ```text
@@ -108,7 +105,6 @@ scanner/
 └── admin.py        # Enhanced Admin UI configuration
 ```
 
-***
 
 ### Note:
 *To see the system in action quickly, I recommend adding the keyword "python" or "javascript" via the `/keywords/` endpoint, then triggering a `/scan/`. These tags are highly active on Dev.to and will consistently generate results.*
