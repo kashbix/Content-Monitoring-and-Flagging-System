@@ -90,7 +90,7 @@ python manage.py test
 - **External Source:** I utilized the Dev.to Public API (`/articles`) for the "Preferred Option" requirement. It was selected because it provides real-time data without requiring authentication keys, simplifying the reviewer's setup.
 - **Service Layer:** All business logic (matching, scoring, and suppression) is abstracted into a service layer (`services.py`). This keeps the views "thin" and focuses them solely on request/response handling.
 - **Admin Interface:** The Django Admin has been customized to allow reviewers to update flag statuses directly from the list view, improving the efficiency of the human review workflow.
-- **External API Choice:**I utilized the Dev.to Public API for content ingestion as it provides high-quality, real-time technical data and, crucially, does not require an API key. This ensures the it can run the "Preferred Solution" immediately without external configuration.
+- **External API Choice:** I utilized the Dev.to Public API for content ingestion as it provides high-quality, real-time technical data and, crucially, does not require an API key. This ensures the it can run the "Preferred Solution" immediately without external configuration.
 
 
 
